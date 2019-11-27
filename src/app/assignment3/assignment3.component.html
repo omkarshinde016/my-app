@@ -1,0 +1,2 @@
+<button class="btn btn-primary" (click)="onClick()">Display Details</button>
+<p *ngFor="let paraContent1 of paraContent" [ngStyle]="{'backgroundColor': paraContent1 > 4 ? 'green':  'transparent' }" >{{paraContent1}}</p>

@@ -1,0 +1,14 @@
+
+ <input type="text" (input)="inputFromServer($event)">
+{{inputData}}
+<hr>
+<button class="btn btn-primary" (click)="onServerCreation()" >Add server</button>
+<p>{{serverCreationStatus}}</p>
+
+<hr>
+<div>
+<h3 style="align-content: center; background-color: dodgerblue; text-align: center;"> UserName</h3>
+<input  type="text" class="forms-control" [(ngModel)]="username"><br>
+<p>{{username}}</p>
+<button class="btn btn-primary" (click)="setUsername()" [disabled]="!username"> Set Username</button>
+</div>
